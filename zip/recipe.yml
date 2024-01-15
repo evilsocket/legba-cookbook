@@ -1,0 +1,12 @@
+description: Uses the cmd plugin in order to unzip a password protected file.
+author: evilsocket
+plugin: cmd
+args:
+    # we only need the password for this
+    username: ""
+    # we only need/have one valid password
+    single-match: null
+    # use bash unzip
+    cmd-binary: unzip
+    # unzip with password and always overwrite (to tmp)
+    cmd-args: "\\-oP '{PASSWORD}' \\-d /tmp {TARGET}"
