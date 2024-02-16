@@ -1,0 +1,6 @@
+description: Performs common SSH bruteforce.
+author: cyberroute
+plugin: ssh
+args:
+    username: "{$recipe.path}/18-usernames.txt"
+    password: "{$recipe.path}/500-passwords.txt"
