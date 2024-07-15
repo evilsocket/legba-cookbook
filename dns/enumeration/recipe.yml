@@ -3,5 +3,9 @@ author: evilsocket
 plugin: dns
 args:
     payloads: "{$recipe.path}/200k-dns.txt"
+    # do not print statistics
+    quiet: null
+    # perform ip to hostname lookup
+    dns-ip-lookup: null
     # uncomment to use external resolvers
     # dns-resolvers: "8.8.8.8, 8.8.4.4"
