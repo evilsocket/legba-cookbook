@@ -6,4 +6,5 @@ args:
     payloads: "{$recipe.path}/dictionary.txt"
     http-method: "{$method or GET}"
     http-success-codes: "{$success_code or 200}"
-    http-success-string: "alert"
+    http-success-string: "{$payload}"
+    
