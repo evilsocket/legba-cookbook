@@ -1,0 +1,1 @@
+This is an example recipe that uses the cmd plugin in order bruteforce a WiFi password using /usr/sbin/networksetup

