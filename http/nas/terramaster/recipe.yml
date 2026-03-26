@@ -4,5 +4,5 @@ plugin: http
 args:
     target: "{$schema or http}://{$host}:{$port or 8181}/3.0/index.php?user/loginSubmit&name={USERNAME}&password={PASSWORD}"
     http-method: GET
-    http-success-codes: 302
+    http-success: "status == 302"
     single-match: null

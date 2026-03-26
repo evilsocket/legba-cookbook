@@ -4,6 +4,5 @@ plugin: http
 args:
     target: "{$schema or https}://{$host}:{$port or 443}/owa/auth.owa"
     http-method: POST
-    http-success-codes: 302
-    http-success-string: set-cookie
+    http-success: "status == 302 && set_cookie != \"\""
     http-payload: destination={$schema or https}://{$host}:{$port or 443}/&flags=4&username={USERNAME}&password={PASSWORD}
