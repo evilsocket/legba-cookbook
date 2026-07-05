@@ -5,5 +5,5 @@ args:
     target: "{$schema or https}://{$host}:{$port or 443}{$path or /}"
     payloads: "{$recipe.path}/dictionary.txt"
     http-method: "{$method or GET}"
-    http-success-codes: "{$success_code or 200}"
+    http-success: "status == {$success_code or 200}"
     http-enum-ext: "{$extension or php}"

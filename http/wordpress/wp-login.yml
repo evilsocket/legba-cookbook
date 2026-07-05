@@ -4,5 +4,5 @@ plugin: http
 args:
     target: "{$schema or https}://{$host}:{$port or 443}{$path or /}wp-login.php"
     http-method: POST
-    http-success-codes: 302
+    http-success: "status == 302"
     http-payload: log={USERNAME}&pwd={PASSWORD}
